@@ -3,14 +3,12 @@ FROM frolvlad/alpine-mono
 MAINTAINER Mark <willietgwb@gmail.com>
 
 COPY start.sh /start
-# Add and install mono
-ENV TSHOCK_VERSION=4.3.26
 
 RUN mkdir /world /config /logs /plugins /tshock && \
         cd /tshock && \
-        wget https://github.com/NyxStudios/TShock/releases/download/v$TSHOCK_VERSION/tshock_$TSHOCK_VERSION.zip && \
-        unzip tshock_$TSHOCK_VERSION.zip && \
-        rm tshock_$TSHOCK_VERSION.zip && \
+        wget https://github.com/Pryaxis/TShock/releases/download/v4.4.0-pre12/TShock4.4.0_Pre12_Terraria1.4.0.5.zip && \
+        unzip TShock4.4.0_Pre12_Terraria1.4.0.5.zip && \
+        rm TShock4.4.0_Pre12_Terraria1.4.0.5.zip && \
         chmod +x /tshock/TerrariaServer.exe && \
         chmod +x /start
 
