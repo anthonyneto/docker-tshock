@@ -9,7 +9,7 @@ RUN mkdir /world /config /logs /plugins /tshock && \
         wget https://github.com/Pryaxis/TShock/releases/download/v4.4.0-pre13/TShock4.4.0_Pre13_Terraria1.4.1.1.zip && \
         unzip TShock4.4.0_Pre13_Terraria1.4.1.1.zip && \
         rm TShock4.4.0_Pre13_Terraria1.4.1.1.zip && \
-        chmod +x /tshock/TerrariaServer.exe && \
+        chmod +x /tshock/deploy/TerrariaServer.exe && \
         chmod +x /start
 
 # External data
