@@ -16,7 +16,7 @@ RUN mkdir /world /config /logs /plugins /tshock && \
 VOLUME ["/world", "/config", "/logs", "/plugins"]
 
 # Back to the working directory for the server
-WORKDIR /tshock
+WORKDIR /tshock/deploy
 
 EXPOSE 7777
 
