@@ -6,9 +6,9 @@ COPY start.sh /start
 
 RUN mkdir -p /world /config /logs /plugins /tshock/deploy && \
         cd /tshock/deploy && \
-        wget https://github.com/Pryaxis/TShock/releases/download/v4.5.2/TShock.4.5.2.Terraria.1.4.2.2a.zip && \
-        unzip TShock.4.5.2.Terraria.1.4.2.2a.zip && \
-        rm TShock.4.5.2.Terraria.1.4.2.2a.zip && \
+        wget https://github.com/Pryaxis/TShock/releases/download/v4.5.3/TShock_4.5.3_Terraria_1.4.2.3.zip && \
+        unzip TShock_4.5.3_Terraria_1.4.2.3.zip && \
+        rm TShock_4.5.3_Terraria_1.4.2.3.zip && \
         chmod +x /tshock/deploy/TerrariaServer.exe && \
         chmod +x /start
 
